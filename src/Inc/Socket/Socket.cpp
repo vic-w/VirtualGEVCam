@@ -1103,7 +1103,7 @@ int UDP::Send(Ip ip, Port port, const T *data, size_t len)
 template <typename T>
 int UDP::Send(const Address& address, const T *data, size_t len)
 {
-    return this->Send<T>(address.GetIp(), address.GetPort(), data, len);
+    return this->Send<T>(address.GetAddressIp(), address.GetAddressPort(), data, len);
 }
 
 template <typename T>
@@ -1115,7 +1115,7 @@ int UDP::Send(Ip ip, Port port, T data)
 template <typename T>
 int UDP::Send(const Address& address, T data)
 {
-    return this->Send<T>(address.GetIp(), address.GetPort(), &data, 1);
+    return this->Send<T>(address.GetAddressIp(), address.GetAddressPort(), &data, 1);
 }
 
 template <>

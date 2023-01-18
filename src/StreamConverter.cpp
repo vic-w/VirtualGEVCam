@@ -1,6 +1,6 @@
 // -*- coding: gb2312-dos -*-
 #include "StreamConverter.h"
-#include "Inc/FreeImage/FreeImage.h"
+#include "Inc\FreeImage3180\FreeImage\Source\FreeImage.h"
 
 #include "stdint.h"
 #include <iostream>
